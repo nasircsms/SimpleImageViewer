@@ -30,6 +30,7 @@
 		A0BF70BA1EDC75AE00109F6E /* ImageViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07E76ED1ECC959700B77D46 /* ImageViewerController.xib */; };
 		A0BF70BB1EDC75AE00109F6E /* ImageViewer-Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07E77231ECF289800B77D46 /* ImageViewer-Assets.xcassets */; };
 		A0BF70BC1EDC767B00109F6E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07E77211ECF1FC100B77D46 /* HeaderView.swift */; };
+		A2FC0272C02F163681889E35 /* Pods_SimpleImageViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13903CD3F088F420B95474AB /* Pods_SimpleImageViewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13903CD3F088F420B95474AB /* Pods_SimpleImageViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADCE65245A91155EEE711FB /* Pods-SimpleImageViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageViewer.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageViewer/Pods-SimpleImageViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		A02EE5B81EF16E54000EAB41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02EE5CB1EF16EBE000EAB41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02EE5CD1EF172C3000EAB41 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		A08B781B1EF1674200F8C5BC /* ImageViewerDismissalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerDismissalInteractor.swift; sourceTree = "<group>"; };
 		A0BF70A71EDC5B1400109F6E /* SimpleImageViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleImageViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BF70A91EDC5B1400109F6E /* ImageViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewer.h; sourceTree = "<group>"; };
+		F82B1533FB72F0F3D82B42BB /* Pods-SimpleImageViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageViewer.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageViewer/Pods-SimpleImageViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +109,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FC0272C02F163681889E35 /* Pods_SimpleImageViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39CD70F12C7CF4F47989EC77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13903CD3F088F420B95474AB /* Pods_SimpleImageViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A02EE5D51EF1897D000EAB41 /* SimpleImageViewerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +158,8 @@
 				A0BF70A81EDC5B1400109F6E /* SimpleImageViewer */,
 				A02EE5D51EF1897D000EAB41 /* SimpleImageViewerTests */,
 				A07E76D41ECC94A400B77D46 /* Products */,
+				BFC09162B05FA0D06CE0D3A4 /* Pods */,
+				39CD70F12C7CF4F47989EC77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +222,15 @@
 			path = ImageViewer;
 			sourceTree = "<group>";
 		};
+		BFC09162B05FA0D06CE0D3A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ADCE65245A91155EEE711FB /* Pods-SimpleImageViewer.debug.xcconfig */,
+				F82B1533FB72F0F3D82B42BB /* Pods-SimpleImageViewer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -261,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0BF70B01EDC5B1400109F6E /* Build configuration list for PBXNativeTarget "SimpleImageViewer" */;
 			buildPhases = (
+				B64513E2451775333D88474A /* [CP] Check Pods Manifest.lock */,
 				A0BF70A21EDC5B1400109F6E /* Sources */,
 				A0BF70A31EDC5B1400109F6E /* Frameworks */,
 				A0BF70A41EDC5B1400109F6E /* Headers */,
@@ -298,7 +323,7 @@
 					};
 					A0BF70A61EDC5B1400109F6E = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -308,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -351,6 +377,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B64513E2451775333D88474A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleImageViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A02EE5D01EF1897D000EAB41 /* Sources */ = {
@@ -580,6 +631,7 @@
 		};
 		A0BF70B11EDC5B1400109F6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADCE65245A91155EEE711FB /* Pods-SimpleImageViewer.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -596,8 +648,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -605,6 +656,7 @@
 		};
 		A0BF70B21EDC5B1400109F6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82B1533FB72F0F3D82B42BB /* Pods-SimpleImageViewer.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -621,8 +673,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
